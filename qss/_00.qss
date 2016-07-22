@@ -1,0 +1,37 @@
+html{w1,h1,c.f,box,list-style-type:none;}
+*{box}
+body{p.0,m.0,w1,h1,b.fff,f.100%,font-family: 'Open Sans Condensed'}
+a{c.5bc3d0}
+input{b.f,o.bbb,f.90%,c.6,bw.1,m.0,r.2,c.3070ab,font-family:'Open Sans Condensed',font-weight:bold}
+select{b.f,o.bbb,bw.1,f.110%,c.6,bw.1,m.0,r.2,c.3070ab,font-family:'Open Sans Condensed',font-weight:bold}
+
+textarea{b.f,o.bbb,f.110%,c.6,bw.1,m.0,r.2,c.3070ab,font-family:'Open Sans Condensed',font-weight:bold}
+
+#con_pag{f.100%}
+#Pearson{
+        -ms-zoom: 0.75;
+        -moz-transform: scale(0.75);
+        -moz-transform-origin: 0 0;
+        -o-transform: scale(0.75);
+        -o-transform-origin: 0 0;
+        -webkit-transform: scale(0.75);
+        -webkit-transform-origin: 0 0;
+}
+
+
+.mnu_lbl_sel{}
+.mnu_lbl{}
+.mnu_lbl:hover{c.499ca6}
+.mnu_lbl_sel{c.3070ab}
+.main_nosel{c.fff}
+.main_nosel:hover{c.666}
+.main_sel{b.bc4545,c.fff}
+.mnu_sep:last-child{color:#999!important}
+.button{poi,cen,o.3070ab,m0a,r.20,bw.1,b.3070ab,c.f,f.130%,p.2|20}
+.button:hover{c.fff,poi,cen,o.5bc3d0,m0a,r.20,bw.1,b.5bc3d0}
+.rad_but{dib,o.bbb,mr.1%,p.1|10,b.eee,r.2,c.666,poi}
+.rad_but:hover{c.499ca6!important}
+.rad_but_sel{dib,o.3070ab,mr.1%,p.1|10,b.eee,r.2,c.3070ab,poi,b.cbd6e8}
+
+
+
