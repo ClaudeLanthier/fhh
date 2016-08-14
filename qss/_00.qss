@@ -1,10 +1,11 @@
-html{w1,h1,c.f,box,list-style-type:none;}
+html{w1,h1,c.f,box,list-style-type:none;overflow:hidden;}
 *{box}
 body{p.0,m.0,w1,h1,b.fff,f.100%,font-family: 'Open Sans Condensed'}
 a{c.5bc3d0}
 input{b.f,o.bbb,f.90%,c.6,bw.1,m.0,r.2,c.3070ab,font-family:'Open Sans Condensed',font-weight:bold}
+input[type=number]{w.60,cen}
 select{b.f,o.bbb,bw.1,f.110%,c.6,bw.1,m.0,r.2,c.3070ab,font-family:'Open Sans Condensed',font-weight:bold}
-
+select{cen,w.10%}
 textarea{b.f,o.bbb,f.110%,c.6,bw.1,m.0,r.2,c.3070ab,font-family:'Open Sans Condensed',font-weight:bold}
 
 #con_pag{f.100%}
@@ -17,6 +18,8 @@ textarea{b.f,o.bbb,f.110%,c.6,bw.1,m.0,r.2,c.3070ab,font-family:'Open Sans Conde
         -webkit-transform: scale(0.75);
         -webkit-transform-origin: 0 0;
 }
+#con_mid{overflow:auto;}
+
 
 
 .mnu_lbl_sel{}
@@ -34,4 +37,9 @@ textarea{b.f,o.bbb,f.110%,c.6,bw.1,m.0,r.2,c.3070ab,font-family:'Open Sans Conde
 .rad_but_sel{dib,o.3070ab,mr.1%,p.1|10,b.eee,r.2,c.3070ab,poi,b.cbd6e8}
 
 
-
+.f_tbl>div>div{w.15%,cen}
+.f_tbl>div>div:first-child{w.25%,lft,pl.5,pr.5}
+.f_tbl>div:first-child>div:first-child{w.25%,cen}
+.f_tbl>div>div:last-child{}
+.f_tbl>div:first-child>div:last-child{cen}
+.f_tbl select{w.98%,bw.0}
