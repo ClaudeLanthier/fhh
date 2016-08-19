@@ -165,11 +165,11 @@ var $={
 		}else{
 			for (var k in pp){
 				var c=pp[k];
-				//var nu=$.nu_count(c.field.name).toString();
 				var nu=(Number(k)+1).toString();
 
 				if(c.generate){$.question_generate(inr,c,"");}else{	$.row_build(inr,c,"");}
-				if(c.condition){
+				var f=($.fld[c.field.name]=="")?0:1;
+				if(c.condition && f==0){
 					_o["q_"+c.field.name].style.display="none"; 
 					_o["q_"+c.field.name].sa("condition",1) 
 				}
@@ -308,15 +308,15 @@ var $={
 		var r=document.getElementsByClassName("rad_but_sel");
 		var p=document.getElementsByClassName("inputs");
 		var n=0,jp=0,jq=0,jr=0;
-		for (var ip = 0; ip < p.length; ip++) {
-			if(p[ip].parentNode.parentNode.parentNode.parentNode.style.display!="none"){
-				if(p[ip].value!=""){jp++;}
-			}
-		}
-		cl(jp)
+
 		for (var iq = 0; iq < q.length; iq++) {
 			if(q[iq].style.display!="none"){
 				jq++;
+			}
+		}
+		for (var ip = 0; ip < p.length; ip++) {
+			if(p[ip].parentNode.parentNode.parentNode.parentNode.style.display!="none"){
+				if(p[ip].value!=""){jp++;}
 			}
 		}
 		for (var ir = 0; ir < r.length; ir++) {
@@ -324,8 +324,11 @@ var $={
 				jr++;
 			}
 		}
+
 		if(jr>0 || jp>0){
 			_o["lc_"+$.sm].style.background="#3070ab";
+		}else{
+			_o["lc_"+$.sm].style.background="#fff";
 		}
 		if(jr+jp==jq){
 			_o["rc_"+$.sm].style.background="#3070ab";

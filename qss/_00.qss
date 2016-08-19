@@ -4,10 +4,10 @@ body{p.0,m.0,w1,h1,b.fff,f.100%,font-family: 'Open Sans Condensed'}
 a{c.5bc3d0}
 input{b.f,o.bbb,f.90%,c.6,bw.1,m.0,r.2,c.3070ab,font-family:'Open Sans Condensed',font-weight:bold}
 input[type=number]{w.60,cen}
-select{b.f,o.bbb,bw.1,f.110%,c.6,bw.1,m.0,r.2,c.3070ab,font-family:'Open Sans Condensed',font-weight:bold}
-select{cen,w.10%}
-textarea{b.f,o.bbb,f.110%,c.6,bw.1,m.0,r.2,c.3070ab,font-family:'Open Sans Condensed',font-weight:bold}
-
+select{b.f,o.bbb,bw.1,f.100%,c.6,bw.1,m.0,r.2,c.3070ab,font-family:'Open Sans Condensed',font-weight:bold}
+select{cen,w.20%}
+textarea{b.f,o.bbb,f.100%,c.6,bw.1,m.0,r.2,c.3070ab,font-family:'Open Sans Condensed',font-weight:bold}
+option{lft}
 #con_pag{f.100%}
 #Pearson{
         -ms-zoom: 0.75;

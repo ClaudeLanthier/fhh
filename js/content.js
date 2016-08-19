@@ -105,8 +105,11 @@ var _f=[
             "daughter of mother's half sister (same mother)"
         ]
      } 
-]
-
+];
+var _levs={"ancestry":["",
+        "North African","Central African","South African","East Asian","South Asian","South East Asian","Central Asian","Middle Eastern","Jewish","Northern European","Eastern European","Western European","Australian","South American","Central American","North American Aboriginal","South American Aboriginal","Australian Aboriginal","Other"
+    ]
+};
 var _c={
     "title": "Family Health History",
     "intro": "<p>Welcome to the Family Health History Questionnaire, a digital tool used by your healthcare provider to capture your family health history and assess your risk of certain genetic diseases in order to determine whether you are a candidate for genetic testing.</p><p>The privacy and security of Protected Health Information is our primary concern. All information entered into the Family History Tool is stored in an encrypted HIPAA-compliant server. We do NOT use the information you provide unless your healthcare provider orders a test through the tool (at which point we need the family history information to aid in the interpretation of test results). We do not use your family history information for research purposes, nor do we allow third parties to have access to this information.</p><p>Your use of the Family History Tool is subject to our <a href='' target='_blank'>Terms of Use</a>. More information about our Privacy Policy and Practices can be found <a href='' target='_blank'>here</a>.</p><p>If you have any questions about this family questionnaire tool, or have any difficulties using the tool, please get in touch with your regional team member <a href='https://heartsys.org/5/hiro/?m=About-Us&s=Find-a-Clinic' target='_blank'>here</a> </p>",
@@ -182,7 +185,7 @@ var _c={
             "title": "Personal Information 2",
             "content": [
                 {
-                    "title": "What is your height?",
+                    "title": "What is your height (cm)?",
                     "field": {
                         "name": "f7",
                         "type": "input",
@@ -190,7 +193,7 @@ var _c={
                     }
                 },
                 {
-                    "title": "What is your weight?",
+                    "title": "What is your weight (kg)?",
                     "field": {
                         "name": "f8",
                         "type": "input",
@@ -203,38 +206,51 @@ var _c={
                         "name": "f9",
                         "type": "radio",
                         "values": [
-                            "African American",
-                            "Asian",
-                            "Native American ",
-                            "Pacific Islander",
-                            "White"
+                            "African",
+                            "East Asian",
+                            "European (Non-Finnish)",
+                            "European (Finnish)",
+                            "Latino",
+                            "South Asian",
+                            "Other"
                         ]
                     }
                 },
                 {
-                    "title": "What ancestry best describes you?",
+                    "title": "What is your ancestry #1?",
                     "field": {
-                        "name": "f10",
+                        "name": "f10-1",
                         "type": "select",
-                        "values": [
-                            "",
-                            "o1",
-                            "o2",
-                            "o3"
-                        ]
+                        "values": _levs.ancestry
                     }
                 },
+                                {
+                    "title": "What is your ancestry #2?",
+                    "field": {
+                        "name": "f10-2",
+                        "type": "select",
+                        "values": _levs.ancestry
+                    }
+                },
+                                {
+                    "title": "What is your ancestry #3?",
+                    "field": {
+                        "name": "f10-3",
+                        "type": "select",
+                        "values": _levs.ancestry
+                    }
+                }/*,
                 {
                     "title": "Are you of Jewish descent?",
                     "field": {
                         "name": "f11",
                         "type": "radio",
                         "values": [
-                            "Male",
-                            "Female"
+                            "Yes",
+                            "Non"
                         ]
                     }
-                }
+                }*/
             ]
         },
         {
